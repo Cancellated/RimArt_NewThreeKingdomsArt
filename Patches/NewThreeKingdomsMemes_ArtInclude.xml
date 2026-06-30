@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  将新三词库 include 到原版艺术品描述 RulePackDef 中。
+  include 机制是追加合并，不覆写原版规则。
+  多个 Mod 可各自添加 include，互不冲突。
+-->
+<Patch>
+
+  <!-- 有故事分支：采用原版词库 -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RulePackDef[defName="ArtDescriptionRoot_HasTale"]</xpath>
+    <value>
+      <include>
+        <li>NewThreeKingdomsArt_MemeArtRules</li>
+      </include>
+    </value>
+  </Operation>
+
+  <!-- 无故事分支：注入新三词库 -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RulePackDef[defName="ArtDescriptionRoot_Taleless"]</xpath>
+    <value>
+      <include>
+        <li>NewThreeKingdomsArt_MemeArtRules</li>
+      </include>
+    </value>
+  </Operation>
+
+</Patch>

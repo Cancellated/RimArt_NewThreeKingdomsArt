@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  新三词库 - 中文翻译
+
+    1. 在 ntkmeme_scene 区添加新场景（整段不可分割的名场面）
+    2. 在子规则区添加可变组件词池（用 ntkmeme_ 前缀命名）
+    3. 梗文本内可引用原版占位符
+    4. HasTale 分支额外可用 [tale_noun] [DATE]
+
+  触发概率：
+    r_art_description 和原版 r_art_description(默认 p=1)进行权重比较，
+    如需调整，修改入口规则的 p 值即可。
+-->
+<LanguageData>
+
+  <NewThreeKingdomsArt_MemeArtRules.rulePack.rulesStrings>
+
+    <!-- ===== 入口规则 ===== -->
+    <li>r_art_description(p=1)->[ntkmeme_scene]</li>
+
+    <!-- ===== 名场面 ===== -->
+
+    <li>ntkmeme_scene->画面中[depicts]的是[Quantity_adjphrase]米莉拉正拉着一名告老还乡的绮罗，米莉拉的神态急切而不舍，画面下方刻有两行小字："你走了，我们吃什么？""是啊，吃什么？"[style_clause]。</li>
+    <li>ntkmeme_scene->这件作品[depicts]了一个手术事故现场。画面中央是一个手术台，上面躺着一个[ntkmeme_surgery_victim]，[side_position]是一名龙裔医生，在说："不是我害了你，是这边缘世界害了你啊！"</li>
+    <li>ntkmeme_scene->该作品[depicts]了一名医生正在一个[ntkmeme_race]尸体旁哭泣,[side_position]有位[PersonJob][desc_pawn]，安慰道：“医者，是医过的人越多，医术越高明。换句话说，就是医死的人越多，医术越高明。”</li>
+    <li>ntkmeme_scene->画面[depicts]了一对笑面虎，两只乌角鲨。[style_clause]，[symbolizes]作者对新三国的[AdjectiveFriendly]。</li>
+    <li>ntkmeme_scene->本作讲述的故事发生在[ntkmeme_location]的[ntkmeme_place]。一位[pawn_adj][ntkmeme_race]正在对[Quantity_adjphrase]士兵发表演讲：“三军听令，战至最后一刻，自刎归天！”</li>
+    <li>ntkmeme_scene->整个画面[depicts]一位[emotional_expression]的龙裔,[idles]在[ntkmeme_location]。[style_clause]，并配文：龙，可是帝王之征啊！</li>
+    <li>ntkmeme_scene->这个场景[depicts]了一位[ConceptBadass]的[Enemy]，位于[ntkmeme_location]的[ntkmeme_place]，面向旁人说："你们暂且在这里稍候，看我捅[ntkmeme_specialCharacter]那小子一万个透明窟窿去！"。</li>
+
+    <!-- ===== 新三专用子规则（可变组件词池）=====
+         命名约定：ntkmeme_ 前缀。
+         词池内可继续嵌套原版占位符实现多层随机。
+    -->
+
+    <!-- 种族池-->
+    <li>ntkmeme_race->智人</li>
+    <li>ntkmeme_race->猪猡种</li>
+    <li>ntkmeme_race->尼人种</li>
+    <li>ntkmeme_race->炎魔种</li>
+    <li>ntkmeme_race->污骸种</li>
+    <li>ntkmeme_race->骠骑种</li>
+    <li>ntkmeme_race->智灵种</li>
+    <li>ntkmeme_race->优侣种</li>
+    <li>ntkmeme_race->毛绒种</li>
+    <li>ntkmeme_race->星旅种</li>
+    <li>ntkmeme_race->土鼹种</li>
+    <li>ntkmeme_race->赫血种</li>
+    <li>ntkmeme_race->鼠族</li>
+    <li>ntkmeme_race->绮罗族</li>
+    <li>ntkmeme_race->米莉拉</li>
+    <li>ntkmeme_race->龙裔</li>
+    <li>ntkmeme_race->萌螈</li>
+    <li>ntkmeme_race->沃芬</li>
+
+    <!-- 手术事故：受害者 -->
+    <li>ntkmeme_surgery_victim->看不见躯干的[ntkmeme_race]</li>
+    <li>ntkmeme_surgery_victim->内脏变成外脏的[ntkmeme_race]</li>
+    <li>ntkmeme_surgery_victim->[ntkmeme_organ]被取出来又放回去一半的[ntkmeme_race]</li>
+    <li>ntkmeme_surgery_victim->身首分离的[ntkmeme_race]</li>
+
+    <!-- 地点池 -->
+    <li>ntkmeme_location->天空之城卡利多</li>
+    <li>ntkmeme_location->一个鼠族城镇</li>
+    <li>ntkmeme_location->隐居的绮罗村庄</li>
+    <li>ntkmeme_location->金鸢尾兰花海</li>
+    <li>ntkmeme_location->一座巨大的高塔</li>
+    <li>ntkmeme_location->一片繁茂的竹林</li>
+    <li>ntkmeme_location->一个未知的地点</li>
+
+    <!-- 地点相对位置池 -->
+    <li>ntkmeme_place->郊外</li>
+    <li>ntkmeme_place->中心</li>
+    <li>ntkmeme_place->深处</li>
+    <li>ntkmeme_place->附近</li>
+    <li>ntkmeme_place->边缘</li>
+    <li>ntkmeme_place->不知何处</li>
+
+    <!-- 器官池 -->
+    <li>ntkmeme_organ->内脏</li>
+    <li>ntkmeme_organ->眼球</li>
+    <li>ntkmeme_organ->肺</li>
+    <li>ntkmeme_organ->心脏</li>
+    <li>ntkmeme_organ->肾</li>
+    <li>ntkmeme_organ->肝</li>
+
+    <!-- 特殊人物池 -->
+    <li>ntkmeme_specialCharacter->沙皇</li>
+    <li>ntkmeme_specialCharacter->骑士长</li>
+    <li>ntkmeme_specialCharacter->莉迪亚</li>
+    <li>ntkmeme_specialCharacter->猫咪勇者</li>
+    <li>ntkmeme_specialCharacter->飞僵</li>
+    <li>ntkmeme_specialCharacter->机械主脑</li>
+
+
+  </NewThreeKingdomsArt_MemeArtRules.rulePack.rulesStrings>
+
+</LanguageData>

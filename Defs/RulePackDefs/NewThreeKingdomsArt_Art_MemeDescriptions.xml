@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--新三词库-->
+<Defs>
+  <RulePackDef>
+    <defName>NewThreeKingdomsArt_MemeArtRules</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Entry -->
+        <li>r_art_description(p=1)->[ntkmeme_scene]</li>
+
+        <!-- Meme scenes -->
+        <li>ntkmeme_scene->The image [depicts] [Quantity_adjphrase] Mirira pulling on a retiring Qiluo. The Mirira look desperate and reluctant to let go. At the bottom are two lines: "What will we eat without you?" "Yeah, what?" [style_clause].</li>
+        <li>ntkmeme_scene->This work [depicts] a surgical accident. On the operating table lies [ntkmeme_surgery_victim], [side_position] is a dragonian doctor saying: "I didn't kill you, the rimworld killed you!"</li>
+        <li>ntkmeme_scene->The work [depicts] a doctor crying beside a [ntkmeme_race] corpse.[side_position] is a [PersonJob] [desc_pawn], comforting: "A healer's skill grows with every patient treated. In other words, the more patients you kill, the more skilled you become."</li>
+        <li>ntkmeme_scene->The image [depicts] a pair of smiling tigers and two black-horned sharks. [style_clause], [symbolizes] something [AdjectiveFriendly] about New Three Kingdoms.</li>
+        <li>ntkmeme_scene->The story takes place at [ntkmeme_place] in [ntkmeme_location]. A [pawn_adj] [ntkmeme_race] is giving a speech to [Quantity_adjphrase] soldiers: "All forces, hear me! Fight to the last moment, then return to heaven by your own blade!"</li>
+        <li>ntkmeme_scene->The entire image [depicts] a [emotional_expression] dragonian, [idles] at [ntkmeme_location]. [style_clause], with the caption: "Dragon, is a symbol of king!"</li>
+        <li>ntkmeme_scene->The scene [depicts] a [ConceptBadass] [Enemy] at [ntkmeme_place] in [ntkmeme_location], turning to say: "Wait here, watch me stab [ntkmeme_specialCharacter] ten thousand see-through holes!"</li>
+
+        <!-- Race pool -->
+        <li>ntkmeme_race->baseliner</li>
+        <li>ntkmeme_race->pigskin</li>
+        <li>ntkmeme_race->neanderthal</li>
+        <li>ntkmeme_race->impid</li>
+        <li>ntkmeme_race->waster</li>
+        <li>ntkmeme_race->hussar</li>
+        <li>ntkmeme_race->genie</li>
+        <li>ntkmeme_race->highmate</li>
+        <li>ntkmeme_race->starjack</li>
+        <li>ntkmeme_race->yttakin</li>
+        <li>ntkmeme_race->dirtmole</li>
+        <li>ntkmeme_race->sanguophage</li>
+        <li>ntkmeme_race->ratkin</li>
+        <li>ntkmeme_race->kiiro</li>
+        <li>ntkmeme_race->milira</li>
+        <li>ntkmeme_race->dragonian</li>
+        <li>ntkmeme_race->moelotl</li>
+        <li>ntkmeme_race->wolfein</li>
+
+        <!-- Surgery victims -->
+        <li>ntkmeme_surgery_victim->a [ntkmeme_race] with no torso visible</li>
+        <li>ntkmeme_surgery_victim->a [ntkmeme_race] whose insides became outsides</li>
+        <li>ntkmeme_surgery_victim->a [ntkmeme_race] whose [ntkmeme_organ] was taken out and put back halfway</li>
+        <li>ntkmeme_surgery_victim->a [ntkmeme_race] with head separated from body</li>
+
+        <!-- Location pool -->
+        <li>ntkmeme_location->the sky city Kalido</li>
+        <li>ntkmeme_location->a ratkin town</li>
+        <li>ntkmeme_location->a hidden Kiiro village</li>
+        <li>ntkmeme_location->a golden iris flower field</li>
+        <li>ntkmeme_location->a colossal tower</li>
+        <li>ntkmeme_location->a lush bamboo grove</li>
+        <li>ntkmeme_location->an unknown location</li>
+
+        <!-- Place relative position pool -->
+        <li>ntkmeme_place->the outskirts of</li>
+        <li>ntkmeme_place->the center of</li>
+        <li>ntkmeme_place->the depths of</li>
+        <li>ntkmeme_place->near</li>
+        <li>ntkmeme_place->the edge of</li>
+        <li>ntkmeme_place->somewhere in</li>
+
+        <!-- Organ pool -->
+        <li>ntkmeme_organ->intestines</li>
+        <li>ntkmeme_organ->eyeball</li>
+        <li>ntkmeme_organ->lung</li>
+        <li>ntkmeme_organ->heart</li>
+        <li>ntkmeme_organ->kidney</li>
+        <li>ntkmeme_organ->liver</li>
+
+        <!-- Special character pool -->
+        <li>ntkmeme_specialCharacter->the Tsar</li>
+        <li>ntkmeme_specialCharacter->Lydia</li>
+        <li>ntkmeme_specialCharacter->the Cat Hero</li>
+        <li>ntkmeme_specialCharacter->the Flying Ghoul</li>
+        <li>ntkmeme_specialCharacter->the Mechanoid Overmind</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

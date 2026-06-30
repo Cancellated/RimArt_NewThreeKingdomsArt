@@ -1,0 +1,29 @@
+# ===== .NET 构建产物 =====
+Source/bin/
+Source/obj/
+
+# ===== IDE 文件 =====
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ===== Windows 系统文件 =====
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== NuGet =====
+*.nupkg
+packages/
+
+# ===== 编译中间文件 =====
+*.pdb
+*.cache
+
+# ===== 其他 =====
+*.log
