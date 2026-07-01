@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <RimWorldDir>e:\steam\steamapps\common\RimWorld</RimWorldDir>
-    <HarmonyDir>e:\steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies</HarmonyDir>
+    <RimWorldDir>..\..\..\</RimWorldDir>
+    <HarmonyDir>$(RimWorldDir)..\..\workshop\content\294100\2009463077\Current\Assemblies</HarmonyDir>
   </PropertyGroup>
 
   <ItemGroup>

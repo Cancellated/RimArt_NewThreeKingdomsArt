@@ -110,7 +110,7 @@ namespace NewThreeKingdomsArt
                 rpT.Field<List<Rule>>("untranslatedRulesResolved").Value = null;
             }
 
-            Log.Message($"{Tag}   {defName}: 全部缓存已清空(设为null)");
+            Log.Message($"{Tag}   {defName}: 全部缓存已清空");
         }
     }
 }

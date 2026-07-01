@@ -12,21 +12,21 @@
         <!-- What will we eat without you -->
         <li>ntkmeme_scene->The image [depicts] [Quantity_adjphrase] Mirira pulling on a retiring Qiluo. The Mirira look desperate and reluctant to let go. At the bottom are two lines: "What will we eat without you?" "Yeah, what?" [style_clause].</li>
         <!-- I didn't kill you, the rimworld killed you -->
-        <li>ntkmeme_scene->This work [depicts] a surgical accident. On the operating table lies [ntkmeme_surgery_victim], [side_position] is a dragonian doctor saying: "I didn't kill you, the rimworld killed you!"</li>
+        <li>ntkmeme_scene->This work [depicts] a surgical accident. On the operating table lies [ntkmeme_body_shape] [ntkmeme_race], [side_position] is a dragonian doctor saying: "I didn't kill you, the rimworld killed you!"</li>
         <!-- The more patients you kill, the more skilled you become -->
         <li>ntkmeme_scene->The work [depicts] a doctor crying beside a [ntkmeme_race] corpse.[side_position] is a [PersonJob] [desc_pawn], comforting: "A healer's skill grows with every patient treated. In other words, the more patients you kill, the more skilled you become."</li>
         <!-- A pair of smiling tigers and two black-horned sharks -->
         <li>ntkmeme_scene->The image [depicts] a pair of smiling tigers and two black-horned sharks. [style_clause], [symbolizes] something [AdjectiveFriendly] about New Three Kingdoms.</li>
         <!-- Return to heaven by your own blade -->
-        <li>ntkmeme_scene->The story takes place at [ntkmeme_place] in [ntkmeme_location]. A [pawn_adj] [ntkmeme_race] is giving a speech to [Quantity_adjphrase] soldiers: "All forces, hear me! Fight to the last moment, then return to heaven by your own blade!"</li>
+        <li>ntkmeme_scene->The story takes place at [ntkmeme_place] in [ntkmeme_location]. A [pawn_adj] [ntkmeme_race] is giving a speech to [Quantity_adjphrase] soldiers: "All forces, hear me! Fight to the last moment, then return to heaven by your own blade!" [style_clause].</li>
         <!-- Dragon, is a symbol of king -->
         <li>ntkmeme_scene->The entire image [depicts] a [emotional_expression] dragonian, [idles] at [ntkmeme_location]. [style_clause], with the caption: "Dragon, is a symbol of king!"</li>
         <!-- Ten thousand see-through holes -->
-        <li>ntkmeme_scene->The scene [depicts] a [ConceptBadass] [Enemy] at [ntkmeme_place] in [ntkmeme_location], turning to say: "Wait here, watch me stab [ntkmeme_specialCharacter] ten thousand see-through holes!"</li>
+        <li>ntkmeme_scene->The scene [depicts] a [ConceptBadass] [Enemy] at [ntkmeme_location] [ntkmeme_place], facing [Character], saying: "Wait here, watch me stab [ntkmeme_specialCharacter] ten thousand see-through holes!"</li>
         <!-- Lv Bu is nothing but a brute -->
-        <li>ntkmeme_scene->In the scene, a [ntkmeme_race] angrily pounds the table, with [ntkmeme_emotional_expression_strong] on their face, shouting: "[ntkmeme_specialCharacter] is nothing but a brute! Where did they get the nerve to sneak-attack my [community]?" [style_clause].</li>
+        <li>ntkmeme_scene->In the scene, a [ntkmeme_race] angrily pounds the table, with [emotional_expression_strong] on their face, shouting: "[ntkmeme_specialCharacter] is nothing but a brute! Where did they get the nerve to sneak-attack my [community]?" [style_clause].</li>
         <!-- That explains it -->
-        <li>ntkmeme_scene->The image [depicts] a desk. [side_position], a [PersonJob] is reporting, while a [ntkmeme_race] behind the desk reveals a [ntkmeme_emotional_expression_peace] expression, saying: "That explains it, that explains it."</li>
+        <li>ntkmeme_scene->The image [depicts] a desk. [side_position], a [PersonJob] is reporting, while a [ntkmeme_race] behind the desk reveals a [ntkmeme_emotional_expression_peace] expression, saying: "That explains it, that explains it." [style_clause].</li>
         <!-- Prefers someone else's wife -->
         <li>ntkmeme_scene->The scene appears to take place in [ntkmeme_location]. [Quantity_adjphrase] [ntkmeme_race] are [ntkmeme_dialogue]: "The women you like are nothing like what [NamePerson] likes. [NamePerson] prefers married young women, especially someone else's wife."</li>
         <!-- Speak my name and you shall tremble -->
@@ -49,6 +49,16 @@
         <li>ntkmeme_scene->In the image, a [ntkmeme_race] with an [emotional_expression_peace] expression is drinking with another [ntkmeme_race]. The latter [desc_pawn] and says: "I won't be polite — someone, bring me a bigger cup!" [style_clause].</li>
         <!-- If they cross the river, I'll cross the river too -->
         <li>ntkmeme_scene->The story [depicts] in this work takes place in [ntkmeme_location]. A [ntkmeme_race] is [ntkmeme_dialogue] with their subordinate. The former [emotional_expression], and speaks with [ConceptBadass]: "Alright then, if they cross the river, I'll cross the river too!" [style_clause].</li>
+        <!-- Wind follows the tiger, clouds follow the dragon -->
+        <li>ntkmeme_scene->This work [depicts] a dragon and a tiger. [style_clause]. [side_position] a line of small text reads: "Wind follows the tiger, clouds follow the dragon — dragon and tiger heroes pierce the heavens."</li>
+        <!-- My second brother is invincible -->
+        <li>ntkmeme_scene->This work [depicts] an [ntkmeme_emotional_expression_strong] archotech, pointing at a [ntkmeme_body_shape] corpse: "Impossible! My [ntkmeme_specialCharacter] is invincible! They only ever kill enemies — how could they be killed by one?" [style_clause].</li>
+        <!-- Death is a cool summer night -->
+        <li>ntkmeme_scene->The work [depicts] a grave in [ntkmeme_location], upon which stands a [Shape] tombstone, inscribed: "Death is not to be feared. Death is a cool summer night, where one may rest peacefully without worry." [style_clause].</li>
+        <!-- What a fine fire, even better than the fire of Yiling -->
+        <li>ntkmeme_scene->The image [depicts] an [AdjectiveLarge] sea of flames. [side_position], a [PersonJob] [desc_pawn], sighs: "What a fine fire! Even better than the fire of [community]!"</li>
+        <!-- Song of Guan Yu -->
+        <li>ntkmeme_scene->This work [style_clause]. It [depicts] a [ntkmeme_body_shape] corpse, with a [ntkmeme_emotional_expression_peace] expression on its face. [side_position] is recorded the musical score of the Song of Guan Yu.</li>
 
         <!-- Race pool -->
         <li>ntkmeme_race->baseliner</li>
@@ -70,11 +80,11 @@
         <li>ntkmeme_race->moelotl</li>
         <li>ntkmeme_race->wolfein</li>
 
-        <!-- Surgery victims -->
-        <li>ntkmeme_surgery_victim->a [ntkmeme_race] with no torso visible</li>
-        <li>ntkmeme_surgery_victim->a [ntkmeme_race] whose insides became outsides</li>
-        <li>ntkmeme_surgery_victim->a [ntkmeme_race] whose [ntkmeme_organ] was taken out and put back halfway</li>
-        <li>ntkmeme_surgery_victim->a [ntkmeme_race] with head separated from body</li>
+        <!-- Body shape pool -->
+        <li>ntkmeme_body_shape->a [ntkmeme_race] with no torso visible</li>
+        <li>ntkmeme_body_shape->a [ntkmeme_race] whose insides became outsides</li>
+        <li>ntkmeme_body_shape->a [ntkmeme_race] with head separated from body</li>
+        <li>ntkmeme_body_shape->a [ntkmeme_race] whose brain was destroyed</li>
 
         <!-- Location pool -->
         <li>ntkmeme_location->the sky city Kalido</li>
@@ -93,14 +103,6 @@
         <li>ntkmeme_place->near</li>
         <li>ntkmeme_place->the edge of</li>
         <li>ntkmeme_place->somewhere in</li>
-
-        <!-- Organ pool -->
-        <li>ntkmeme_organ->intestines</li>
-        <li>ntkmeme_organ->eyeball</li>
-        <li>ntkmeme_organ->lung</li>
-        <li>ntkmeme_organ->heart</li>
-        <li>ntkmeme_organ->kidney</li>
-        <li>ntkmeme_organ->liver</li>
 
         <!-- Special character pool -->
         <li>ntkmeme_specialCharacter->the Tsar</li>
