@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<!--新三词库-->
+<!--New Three Kingdoms Meme Rule Pack-->
 <Defs>
   <RulePackDef>
     <defName>NewThreeKingdomsArt_MemeArtRules</defName>
@@ -9,13 +9,46 @@
         <li>r_art_description(p=1)->[ntkmeme_scene]</li>
 
         <!-- Meme scenes -->
+        <!-- What will we eat without you -->
         <li>ntkmeme_scene->The image [depicts] [Quantity_adjphrase] Mirira pulling on a retiring Qiluo. The Mirira look desperate and reluctant to let go. At the bottom are two lines: "What will we eat without you?" "Yeah, what?" [style_clause].</li>
+        <!-- I didn't kill you, the rimworld killed you -->
         <li>ntkmeme_scene->This work [depicts] a surgical accident. On the operating table lies [ntkmeme_surgery_victim], [side_position] is a dragonian doctor saying: "I didn't kill you, the rimworld killed you!"</li>
+        <!-- The more patients you kill, the more skilled you become -->
         <li>ntkmeme_scene->The work [depicts] a doctor crying beside a [ntkmeme_race] corpse.[side_position] is a [PersonJob] [desc_pawn], comforting: "A healer's skill grows with every patient treated. In other words, the more patients you kill, the more skilled you become."</li>
+        <!-- A pair of smiling tigers and two black-horned sharks -->
         <li>ntkmeme_scene->The image [depicts] a pair of smiling tigers and two black-horned sharks. [style_clause], [symbolizes] something [AdjectiveFriendly] about New Three Kingdoms.</li>
+        <!-- Return to heaven by your own blade -->
         <li>ntkmeme_scene->The story takes place at [ntkmeme_place] in [ntkmeme_location]. A [pawn_adj] [ntkmeme_race] is giving a speech to [Quantity_adjphrase] soldiers: "All forces, hear me! Fight to the last moment, then return to heaven by your own blade!"</li>
+        <!-- Dragon, is a symbol of king -->
         <li>ntkmeme_scene->The entire image [depicts] a [emotional_expression] dragonian, [idles] at [ntkmeme_location]. [style_clause], with the caption: "Dragon, is a symbol of king!"</li>
+        <!-- Ten thousand see-through holes -->
         <li>ntkmeme_scene->The scene [depicts] a [ConceptBadass] [Enemy] at [ntkmeme_place] in [ntkmeme_location], turning to say: "Wait here, watch me stab [ntkmeme_specialCharacter] ten thousand see-through holes!"</li>
+        <!-- Lv Bu is nothing but a brute -->
+        <li>ntkmeme_scene->In the scene, a [ntkmeme_race] angrily pounds the table, with [ntkmeme_emotional_expression_strong] on their face, shouting: "[ntkmeme_specialCharacter] is nothing but a brute! Where did they get the nerve to sneak-attack my [community]?" [style_clause].</li>
+        <!-- That explains it -->
+        <li>ntkmeme_scene->The image [depicts] a desk. [side_position], a [PersonJob] is reporting, while a [ntkmeme_race] behind the desk reveals a [ntkmeme_emotional_expression_peace] expression, saying: "That explains it, that explains it."</li>
+        <!-- Prefers someone else's wife -->
+        <li>ntkmeme_scene->The scene appears to take place in [ntkmeme_location]. [Quantity_adjphrase] [ntkmeme_race] are [ntkmeme_dialogue]: "The women you like are nothing like what [NamePerson] likes. [NamePerson] prefers married young women, especially someone else's wife."</li>
+        <!-- Speak my name and you shall tremble -->
+        <li>ntkmeme_scene->In the scene, two armies face off. On one side is [ntkmeme_specialCharacter], while [side_position], a [ntkmeme_race] is issuing a challenge: "Speak my name and you shall tremble! I am [NamePerson], Supreme General of [community]!" [style_clause].</li>
+        <!-- Impossible, absolutely impossible -->
+        <li>ntkmeme_scene->This work [depicts] a [strong_emotional_expression] [ntkmeme_specialCharacter]. [side_position] are the words: "Impossible, absolutely impossible!" [style_clause]</li>
+        <!-- Eighty thousand steamed buns -->
+        <li>ntkmeme_scene->The image [depicts] a [strong_emotional_expression] [ntkmeme_race], [ConceptAngsty] shouting: "Even if it were eighty thousand steamed buns, [ntkmeme_specialCharacter] would need half a month to finish them! How could they just be thrown away!"</li>
+        <!-- Fool of a leader -->
+        <li>ntkmeme_scene->In the image, [ntkmeme_specialCharacter] orders: "[NamePerson] insulted me — twenty strokes of the cane!" [side_position], the one being caned looks [AdjectiveAny], crying out while being beaten: "Fool of a leader! Fool, fool, fool of a leader! You are a fool of a leader!" This appears to take place in [ntkmeme_location].</li>
+        <!-- Petition denied -->
+        <li>ntkmeme_scene->The work [depicts] a [ntkmeme_race] with a [ntkmeme_emotional_expression_strong] expression, with the caption: "I submitted a petition to [ntkmeme_specialCharacter] requesting to be appointed [ntkmeme_officialPosition], and it was denied! They must have seen my [community] growing stronger and deliberately rejected my request!"</li>
+        <!-- Sword of Benevolence, Sword of Righteousness -->
+        <li>ntkmeme_scene->The work [depicts] two [ColorBadass] swords, [style_clause]. The words "Sword of Benevolence" and "Sword of Righteousness" are inscribed on each sword, displaying [ConceptPositive].</li>
+        <!-- Who is the real master -->
+        <li>ntkmeme_scene->In the image, two [ntkmeme_race] stand back to back. One [desc_pawn] and speaks: "In this [community], who is the real master — you or me?" [style_clause]</li>
+        <!-- Keep the music playing, keep the dancing going -->
+        <li>ntkmeme_scene->The work tells a story at [ntkmeme_place] in [ntkmeme_location]: [ntkmeme_specialCharacter] [desc_pawn], while [side_position], their subordinate is urging them. The other shows no concern, saying: "I've fought battles all my life — can't I enjoy myself a little? Keep the music playing, keep the dancing going!"</li>
+        <!-- Bring me a bigger cup -->
+        <li>ntkmeme_scene->In the image, a [ntkmeme_race] with an [emotional_expression_peace] expression is drinking with another [ntkmeme_race]. The latter [desc_pawn] and says: "I won't be polite — someone, bring me a bigger cup!" [style_clause].</li>
+        <!-- If they cross the river, I'll cross the river too -->
+        <li>ntkmeme_scene->The story [depicts] in this work takes place in [ntkmeme_location]. A [ntkmeme_race] is [ntkmeme_dialogue] with their subordinate. The former [emotional_expression], and speaks with [ConceptBadass]: "Alright then, if they cross the river, I'll cross the river too!" [style_clause].</li>
 
         <!-- Race pool -->
         <li>ntkmeme_race->baseliner</li>
@@ -50,6 +83,7 @@
         <li>ntkmeme_location->a golden iris flower field</li>
         <li>ntkmeme_location->a colossal tower</li>
         <li>ntkmeme_location->a lush bamboo grove</li>
+        <li>ntkmeme_location->a magnificent palace</li>
         <li>ntkmeme_location->an unknown location</li>
 
         <!-- Place relative position pool -->
@@ -70,10 +104,41 @@
 
         <!-- Special character pool -->
         <li>ntkmeme_specialCharacter->the Tsar</li>
+        <li>ntkmeme_specialCharacter->the Knight Commander</li>
         <li>ntkmeme_specialCharacter->Lydia</li>
         <li>ntkmeme_specialCharacter->the Cat Hero</li>
         <li>ntkmeme_specialCharacter->the Flying Ghoul</li>
-        <li>ntkmeme_specialCharacter->the Mechanoid Overmind</li>
+
+        <!-- Emotional expression pool (strong) -->
+        <li>ntkmeme_emotional_expression_strong->anger</li>
+        <li>ntkmeme_emotional_expression_strong->shock</li>
+        <li>ntkmeme_emotional_expression_strong->disbelief</li>
+        <li>ntkmeme_emotional_expression_strong->dumbfounded</li>
+        <li>ntkmeme_emotional_expression_strong->furious rage</li>
+
+        <!-- Emotional expression pool (peaceful) -->
+        <li>ntkmeme_emotional_expression_peace->calm</li>
+        <li>ntkmeme_emotional_expression_peace->relieved</li>
+        <li>ntkmeme_emotional_expression_peace->at peace</li>
+        <li>ntkmeme_emotional_expression_peace->sudden enlightenment</li>
+        <li>ntkmeme_emotional_expression_peace->smiling</li>
+        <li>ntkmeme_emotional_expression_peace->kind</li>
+
+        <!-- Dialogue action pool -->
+        <li>ntkmeme_dialogue->whispering</li>
+        <li>ntkmeme_dialogue->murmuring</li>
+        <li>ntkmeme_dialogue->talking in hushed voices</li>
+        <li>ntkmeme_dialogue->gossiping</li>
+        <li>ntkmeme_dialogue->chatting</li>
+        <li>ntkmeme_dialogue->shouting</li>
+
+        <!-- Official position pool -->
+        <li>ntkmeme_officialPosition->Emperor</li>
+        <li>ntkmeme_officialPosition->Inner Court Clan</li>
+        <li>ntkmeme_officialPosition->Pope</li>
+        <li>ntkmeme_officialPosition->Grand Marshal</li>
+        <li>ntkmeme_officialPosition->Arbiter</li>
+
       </rulesStrings>
     </rulePack>
   </RulePackDef>

@@ -9,7 +9,6 @@ namespace NewThreeKingdomsArt
     /// <summary>
     /// 运行时修改新三入口规则权重。
     /// 
-    /// 字段映射（从 dnSpy 核实）：
     ///   RulePackDef.rulePack → RulePack (private)
     ///   RulePackDef.cachedRules / cachedUntranslatedRules → List&lt;Rule&gt; (private, Def级缓存)
     ///   RulePack.rulesStrings → List&lt;string&gt; (private, 翻译后)
@@ -20,7 +19,6 @@ namespace NewThreeKingdomsArt
     /// 缓存重建链：
     ///   rulesStrings → rulesRaw → rulesResolved(含include) → cachedRules(Def级)
     ///   
-    /// 清缓存时必须全部清空，否则父级 include 我们时读到旧缓存。
     /// </summary>
     public static class MemeWeightApplier
     {
@@ -62,9 +60,7 @@ namespace NewThreeKingdomsArt
             Log.Message($"{Tag} Apply() 完成");
         }
 
-        /// <summary>
-        /// 原地替换 rulesStrings 中 r_art_description(p=N) 的权重。
-        /// </summary>
+        // 替换 rulesStrings 中 r_art_description(p=N) 的权重。
         private static void ReplaceWeightInStrings(RulePack rp, string fieldName, float p)
         {
             var list = Traverse.Create(rp).Field<List<string>>(fieldName).Value;
@@ -93,10 +89,9 @@ namespace NewThreeKingdomsArt
         }
 
         /// <summary>
-        /// 清除一个 RulePackDef 的所有缓存层：
+        /// 清除 RulePackDef 的所有缓存层：
         ///   Def 级: cachedRules, cachedUntranslatedRules
         ///   RulePack 级: rulesRaw, untranslatedRulesRaw, rulesResolved, untranslatedRulesResolved
-        /// 全部清空才能确保从 rulesStrings 重新解析。
         /// </summary>
         private static void ClearAllCaches(RulePackDef def, string defName)
         {

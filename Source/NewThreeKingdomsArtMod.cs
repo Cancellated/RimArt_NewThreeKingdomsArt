@@ -10,7 +10,7 @@ namespace NewThreeKingdomsArt
     public class NewThreeKingdomsArtMod : Mod
     {
         public static NewThreeKingdomsArtSettings Settings;
-        private string weightBuf = "0.5";
+        private string weightBuf = "1";
         // 构造函数
         public NewThreeKingdomsArtMod(ModContentPack content) : base(content)
         {

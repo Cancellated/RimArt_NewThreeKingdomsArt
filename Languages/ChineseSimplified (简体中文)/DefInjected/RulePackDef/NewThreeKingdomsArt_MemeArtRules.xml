@@ -19,14 +19,46 @@
     <li>r_art_description(p=1)->[ntkmeme_scene]</li>
 
     <!-- ===== 名场面 ===== -->
-
+    <!--1.你走了，我们吃什么-->
     <li>ntkmeme_scene->画面中[depicts]的是[Quantity_adjphrase]米莉拉正拉着一名告老还乡的绮罗，米莉拉的神态急切而不舍，画面下方刻有两行小字："你走了，我们吃什么？""是啊，吃什么？"[style_clause]。</li>
+    <!--2.不是我害了你，是这个乱世害了你啊-->
     <li>ntkmeme_scene->这件作品[depicts]了一个手术事故现场。画面中央是一个手术台，上面躺着一个[ntkmeme_surgery_victim]，[side_position]是一名龙裔医生，在说："不是我害了你，是这边缘世界害了你啊！"</li>
+    <!--3.医死的人越多，医术越高明-->
     <li>ntkmeme_scene->该作品[depicts]了一名医生正在一个[ntkmeme_race]尸体旁哭泣,[side_position]有位[PersonJob][desc_pawn]，安慰道：“医者，是医过的人越多，医术越高明。换句话说，就是医死的人越多，医术越高明。”</li>
+    <!--4.一对笑面虎，两只乌角鲨-->
     <li>ntkmeme_scene->画面[depicts]了一对笑面虎，两只乌角鲨。[style_clause]，[symbolizes]作者对新三国的[AdjectiveFriendly]。</li>
-    <li>ntkmeme_scene->本作讲述的故事发生在[ntkmeme_location]的[ntkmeme_place]。一位[pawn_adj][ntkmeme_race]正在对[Quantity_adjphrase]士兵发表演讲：“三军听令，战至最后一刻，自刎归天！”</li>
+    <!--5.三军听令，自刎归天-->
+    <li>ntkmeme_scene->本作讲述的故事发生在[ntkmeme_location]的[ntkmeme_place]。一位[pawn_adj][ntkmeme_race]正在对[Quantity_adjphrase]士兵发表演讲：“三军听令，战至最后一刻，自刎归天！”[style_clause]。</li>
+    <!--6.龙，可是帝王之征-->
     <li>ntkmeme_scene->整个画面[depicts]一位[emotional_expression]的龙裔,[idles]在[ntkmeme_location]。[style_clause]，并配文：龙，可是帝王之征啊！</li>
-    <li>ntkmeme_scene->这个场景[depicts]了一位[ConceptBadass]的[Enemy]，位于[ntkmeme_location]的[ntkmeme_place]，面向旁人说："你们暂且在这里稍候，看我捅[ntkmeme_specialCharacter]那小子一万个透明窟窿去！"。</li>
+    <!--7.一万个透明窟窿-->
+    <li>ntkmeme_scene->这个场景[depicts]了一位[ConceptBadass]的[Enemy]，位于[ntkmeme_location][ntkmeme_place]，面向[Character]说："你们暂且在这里稍候，看我捅[ntkmeme_specialCharacter]那小子一万个透明窟窿去！"。</li>
+    <!--8.吕布一介匹夫-->
+    <li>ntkmeme_scene->场景中，一位[ntkmeme_race]愤怒地拍打着桌子，脸上显现出[emotional_expression_strong]，叫喊道：“[ntkmeme_specialCharacter]一介匹夫，哪里来的如此胆识,竟敢偷袭我的[community]?”[style_clause]。</li>
+    <!--9.这就不奇怪了，这就不奇怪了-->
+    <li>ntkmeme_scene->画面[depicts]了一个桌案，[side_position]一名[PersonJob]正在报告，桌后的[ntkmeme_race]露出[ntkmeme_emotional_expression_peace]的神情，说到：“这就不奇怪了，这就不奇怪了”。[style_clause]。</li>
+    <!--10.人家喜欢的是已婚少妇，尤其是别人家的媳妇-->
+    <li>ntkmeme_scene->画面场景看起来在[ntkmeme_location],[Quantity_adjphrase][ntkmeme_race]正在[ntkmeme_dialogue]：“你喜欢的女人和[NamePerson]喜欢的根本就不一样，人家喜欢的是已婚少妇，尤其是别人家的媳妇。”</li>
+    <!--11.说出吾名，吓汝一跳-->
+    <li>ntkmeme_scene->场景中，两军正在对垒，其中一边是[ntkmeme_specialCharacter],而[side_position],一名[ntkmeme_race]正在叫阵：“说出吾名，吓汝一跳！我乃是[community]上将军[NamePerson]！”[style_clause]。</li>
+    <!--12.不可能，绝对不可能-->
+    <li>ntkmeme_scene->这件作品[depicts]了一名[strong_emotional_expression]的[ntkmeme_specialCharacter],[side_position]写着：“不可能，绝对不可能！”[style_clause]。</li>
+    <!--13.你就算是八万个馒头，刘备也得啃上半个月-->
+    <li>ntkmeme_scene->画面中[depicts]了一名[strong_emotional_expression]的[ntkmeme_race],正在[ConceptAngsty]地叫喊：“你就算是八万个馒头，[ntkmeme_specialCharacter]也得啃上半个月！怎么可能说丢就丢！”</li>
+    <!--14.庸主-->
+    <li>ntkmeme_scene->画面中，[ntkmeme_specialCharacter]下令：“[NamePerson]辱我，杖二十军棍！”[side_position]被杖责的人显得[AdjectiveAny]，一边挨打一边高叫着：“庸主，庸，庸，庸主！你是个庸主！”这件事看起来发生在[ntkmeme_location]。</li>
+    <!--15.竟然不许-->
+    <li>ntkmeme_scene->作品[depicts]了一位[ntkmeme_race],其神态[ntkmeme_emotional_expression_strong],并配文：“我上表[ntkmeme_specialCharacter]，让她封我为[ntkmeme_officialPosition]，竟然不许！一定是看我在[community]的日渐强盛，才故意驳回我的请求！”。</li>
+    <!--16.一把仁之剑，一把义之剑-->
+    <li>ntkmeme_scene->作品[depicts]了两把[ColorBadass]的剑，[style_clause]。两把剑上分别写着“仁之剑”和“义之剑”，展现出了[ConceptPositive]。</li>
+    <!--17.这江东到底你是主还是我是主-->
+    <li>ntkmeme_scene->画面中两个[ntkmeme_race]背对而立，其中一位[desc_pawn],并发言：“这[community]到底你是主还是我是主？”[style_clause]。</li>
+    <!--18.接着奏乐，接着舞-->
+    <li>ntkmeme_scene->作品讲述了在[ntkmeme_location]的[ntkmeme_place]的故事：[ntkmeme_specialCharacter][desc_pawn],[side_position]其属下正在劝说。对方表示不以为意，表示：“我打了一辈子的仗，就不能享受享受吗？接着奏乐，接着舞！”。</li>
+    <!--19.来人，换大盏-->
+    <li>ntkmeme_scene->画面中，一位面露[emotional_expression_peace]的[ntkmeme_race]正在和一名[ntkmeme_race]对饮。后者[desc_pawn],并说道：“我是不会客气的，来人，换大盏！”[style_clause]。</li>
+     <!--20.他过江我也过江-->
+    <li>ntkmeme_scene->作品[depicts]的故事发生在[ntkmeme_location],一位[ntkmeme_race]在和部下[ntkmeme_dialogue]。前者[emotional_expression],并充满[ConceptBadass]地发言：“那好啊，他过江我也过江！”[style_clause]。</li>
 
     <!-- ===== 新三专用子规则（可变组件词池）=====
          命名约定：ntkmeme_ 前缀。
@@ -66,6 +98,7 @@
     <li>ntkmeme_location->金鸢尾兰花海</li>
     <li>ntkmeme_location->一座巨大的高塔</li>
     <li>ntkmeme_location->一片繁茂的竹林</li>
+    <li>ntkmeme_location->富丽堂皇的宫殿</li>
     <li>ntkmeme_location->一个未知的地点</li>
 
     <!-- 地点相对位置池 -->
@@ -90,7 +123,36 @@
     <li>ntkmeme_specialCharacter->莉迪亚</li>
     <li>ntkmeme_specialCharacter->猫咪勇者</li>
     <li>ntkmeme_specialCharacter->飞僵</li>
-    <li>ntkmeme_specialCharacter->机械主脑</li>
+
+    <!-- 情感表达池（强烈） -->
+    <li>ntkmeme_emotional_expression_strong->愤怒</li>
+    <li>ntkmeme_emotional_expression_strong->震惊</li>
+    <li>ntkmeme_emotional_expression_strong->不可置信</li>
+    <li>ntkmeme_emotional_expression_strong->瞠目结舌</li>
+    <li>ntkmeme_emotional_expression_strong->怒发冲冠</li>
+
+    <!-- 情感表达池（平静） -->
+    <li>ntkmeme_emotional_expression_peace->平静</li>
+    <li>ntkmeme_emotional_expression_peace->释然</li>
+    <li>ntkmeme_emotional_expression_peace->释怀</li>
+    <li>ntkmeme_emotional_expression_peace->恍然大悟</li>
+    <li>ntkmeme_emotional_expression_peace->微笑</li>
+    <li>ntkmeme_emotional_expression_peace->和善</li>
+
+    <!-- 对话动作 -->
+    <li>ntkmeme_dialogue->窃窃私语</li>
+    <li>ntkmeme_dialogue->交头接耳</li>
+    <li>ntkmeme_dialogue->说悄悄话</li>
+    <li>ntkmeme_dialogue->嚼舌根</li>
+    <li>ntkmeme_dialogue->闲聊</li>
+    <li>ntkmeme_dialogue->嚷嚷</li>
+
+    <!-- 职位 -->
+    <li>ntkmeme_officialPosition->星海帝皇</li>
+    <li>ntkmeme_officialPosition->内宫族</li>
+    <li>ntkmeme_officialPosition->教宗</li>
+    <li>ntkmeme_officialPosition->大司马</li>
+    <li>ntkmeme_officialPosition->仲裁官</li>
 
 
   </NewThreeKingdomsArt_MemeArtRules.rulePack.rulesStrings>
