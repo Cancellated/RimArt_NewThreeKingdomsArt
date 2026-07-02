@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 using HarmonyLib;
 using Verse;
@@ -7,68 +8,84 @@ using Verse.Grammar;
 namespace NewThreeKingdomsArt
 {
     /// <summary>
-    /// 运行时修改新三入口规则权重。
-    /// 
-    ///   RulePackDef.rulePack → RulePack (private)
-    ///   RulePackDef.cachedRules / cachedUntranslatedRules → List&lt;Rule&gt; (private, Def级缓存)
-    ///   RulePack.rulesStrings → List&lt;string&gt; (private, 翻译后)
-    ///   RulePack.untranslatedRulesStrings → List&lt;string&gt; (private, 英文原文)
-    ///   RulePack.rulesRaw / untranslatedRulesRaw → List&lt;Rule&gt; (private, 解析后)
-    ///   RulePack.rulesResolved / untranslatedRulesResolved → List&lt;Rule&gt; (private, 合并include后)
-    /// 
-    /// 缓存重建链：
-    ///   rulesStrings → rulesRaw → rulesResolved(含include) → cachedRules(Def级)
-    ///   
+    /// 运行时修改新三入口规则权重，并注入动态派系名称。
+    /// include 注入已由 MemeGameComponent 的 Harmony Prefix 处理，本类不再负责。
     /// </summary>
     public static class MemeWeightApplier
     {
-        private const string DefName = "NewThreeKingdomsArt_MemeArtRules";
+        private const string NTKDefName = "NewThreeKingdomsArt_MemeArtRules";
+        private const string NTKCubeDefName = "NewThreeKingdomsArt_CubeArtRules";
+        private const string SharedRulesDefName = "NewThreeKingdomsArt_SharedRules";
         private const string Tag = "[新三艺术]";
 
         private static readonly Regex PWeightRegex = new Regex(@"\(p=[\d.]+\)");
 
-        private static readonly string[] ParentDefNames =
-            { "ArtDescriptionRoot_HasTale", "ArtDescriptionRoot_Taleless" };
-
         public static void Apply()
         {
             float p = NewThreeKingdomsArtMod.Settings.memeWeight;
-            Log.Message($"{Tag} Apply() 开始，目标 p={p}（概率={p / (1f + p):P1}）");
+            Log.Message($"{Tag} Apply() p={p}（概率={p / (1f + p):P1}）");
 
-            var ourDef = DefDatabase<RulePackDef>.GetNamedSilentFail(DefName);
-            if (ourDef == null) { Log.Error($"{Tag} 找不到 Def: {DefName}"); return; }
+            // 注入动态派系名称
+            InjectFactionNames();
 
-            var rulePack = Traverse.Create(ourDef).Field<RulePack>("rulePack").Value;
-            if (rulePack == null) { Log.Error($"{Tag} rulePack 为 null"); return; }
-
-            // 原地替换 rulesStrings 中的权重文本
-            ReplaceWeightInStrings(rulePack, "rulesStrings", p);
-            ReplaceWeightInStrings(rulePack, "untranslatedRulesStrings", p);
-
-            // 清空自己的缓存
-            Log.Message($"{Tag} 清除缓存");
-            ClearAllCaches(ourDef, DefName);
-
-            // 清父级缓存
-            Log.Message($"{Tag} 清除父级缓存");
-            foreach (var parentName in ParentDefNames)
-            {
-                var parent = DefDatabase<RulePackDef>.GetNamedSilentFail(parentName);
-                if (parent != null) ClearAllCaches(parent, parentName);
-            }
+            // 替换入口权重
+            ReplaceEntryWeight(NTKDefName, p);
+            ReplaceEntryWeight(NTKCubeDefName, p);
 
             Log.Message($"{Tag} Apply() 完成");
         }
 
-        // 替换 rulesStrings 中 r_art_description(p=N) 的权重。
-        private static void ReplaceWeightInStrings(RulePack rp, string fieldName, float p)
+        /// <summary>
+        /// 从游戏存档中扫描所有可见派系名称，动态注入到 SharedRules 的 ntkmeme_faction 词池。
+        /// </summary>
+        private static void InjectFactionNames()
+        {
+            var sharedDef = DefDatabase<RulePackDef>.GetNamedSilentFail(SharedRulesDefName);
+            if (sharedDef == null) return;
+
+            var rulePack = Traverse.Create(sharedDef).Field<RulePack>("rulePack").Value;
+            if (rulePack == null) return;
+
+            var list = Traverse.Create(rulePack).Field<List<string>>("rulesStrings").Value;
+            if (list == null) return;
+
+            list.RemoveAll(s => s.StartsWith("ntkmeme_faction->"));
+
+            int injected = 0;
+            foreach (var faction in Find.FactionManager.AllFactionsListForReading)
+            {
+                if (faction.IsPlayer || faction.Hidden) continue;
+                string name = faction.Name;
+                if (string.IsNullOrEmpty(name)) continue;
+                list.Add($"ntkmeme_faction->{name}");
+                injected++;
+            }
+
+            Log.Message($"{Tag} 注入 {injected} 个派系名称到 ntkmeme_faction");
+            ClearDefCaches(sharedDef, SharedRulesDefName);
+        }
+
+        /// <summary>
+        /// 替换单个 Def 中 r_art_description(p=N) 的权重并清除缓存。
+        /// </summary>
+        private static void ReplaceEntryWeight(string defName, float p)
+        {
+            var def = DefDatabase<RulePackDef>.GetNamedSilentFail(defName);
+            if (def == null) return;
+
+            var rulePack = Traverse.Create(def).Field<RulePack>("rulePack").Value;
+            if (rulePack == null) return;
+
+            ReplaceInStrings(rulePack, "rulesStrings", p);
+            ReplaceInStrings(rulePack, "untranslatedRulesStrings", p);
+
+            ClearDefCaches(def, defName);
+        }
+
+        private static void ReplaceInStrings(RulePack rp, string fieldName, float p)
         {
             var list = Traverse.Create(rp).Field<List<string>>(fieldName).Value;
-            if (list == null)
-            {
-                Log.Message($"{Tag}   RulePack.{fieldName} = null");
-                return;
-            }
+            if (list == null) return;
 
             int modified = 0;
             for (int i = 0; i < list.Count; i++)
@@ -81,25 +98,21 @@ namespace NewThreeKingdomsArt
                     {
                         list[i] = newStr;
                         modified++;
-                        Log.Message($"{Tag}   [{fieldName}][{i}]: '{oldStr}' → '{newStr}'");
                     }
                 }
             }
-            Log.Message($"{Tag}   [{fieldName}] 共 {list.Count} 条，修改了 {modified} 条");
+            if (modified > 0)
+                Log.Message($"{Tag}   [{fieldName}] 修改了 {modified} 条");
         }
 
         /// <summary>
-        /// 清除 RulePackDef 的所有缓存层：
-        ///   Def 级: cachedRules, cachedUntranslatedRules
-        ///   RulePack 级: rulesRaw, untranslatedRulesRaw, rulesResolved, untranslatedRulesResolved
+        /// 清除 RulePackDef 的所有缓存层。
         /// </summary>
-        private static void ClearAllCaches(RulePackDef def, string defName)
+        private static void ClearDefCaches(RulePackDef def, string defName)
         {
-            // Def 级缓存
             Traverse.Create(def).Field<List<Rule>>("cachedRules").Value = null;
             Traverse.Create(def).Field<List<Rule>>("cachedUntranslatedRules").Value = null;
 
-            // RulePack 级
             var rp = Traverse.Create(def).Field<RulePack>("rulePack").Value;
             if (rp != null)
             {
@@ -109,8 +122,6 @@ namespace NewThreeKingdomsArt
                 rpT.Field<List<Rule>>("rulesResolved").Value = null;
                 rpT.Field<List<Rule>>("untranslatedRulesResolved").Value = null;
             }
-
-            Log.Message($"{Tag}   {defName}: 全部缓存已清空");
         }
     }
 }

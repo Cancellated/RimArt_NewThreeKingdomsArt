@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  新三魔方词库 - 中文翻译
+
+  可用原版魔方占位符：
+    [cubeWork]     - 作品/雕塑/艺术品/作品
+    [cubeDepicts]  - 描绘了/展示了/展现了/描写了
+    [aCube]        - 抽象的魔方/完美的魔方/不稳的魔方/...
+    [cubeLocation] - 接近中心的位置/在每一面/在每面的中心/...
+    [aPawn]        - 作者的自画像/一只敲击兽/长着很多眼睛的瘦削之人/...
+    [pawnsPlural]  - 你的殖民者/一群土匪/部落集会/...
+    [worshippingTheCube] - 崇拜魔方/向魔方鞠躬/跪拜魔方/...
+    [worshipsTheCube]    - 崇拜魔方/向魔方鞠躬/跪拜魔方/...
+    [cubeEmotion]  - 陷入无序/感到快乐/十分伤心/...
+
+  可用共享子规则（来自 NewThreeKingdomsArt_SharedRules）：
+    [ntkmeme_race]
+    [ntkmeme_body_shape]
+    [ntkmeme_location]
+    [ntkmeme_place]
+    [ntkmeme_specialCharacter]
+    [ntkmeme_emotional_expression_strong]
+    [ntkmeme_emotional_expression_peace]
+    [ntkmeme_dialogue]
+    [ntkmeme_officialPosition]
+-->
+<LanguageData>
+
+  <NewThreeKingdomsArt_CubeArtRules.rulePack.rulesStrings>
+
+    <!-- ===== 入口规则 ===== -->
+    <li>r_art_description(p=1)->[ntkcube_scene]</li>
+
+    <!--1.恭喜爹可以称帝了-->
+    <li>ntkcube_scene->[cubeWork][cubeDepicts][aCube]。一位[ntkmeme_race][PersonJob]正举着魔方对[aPawn]说：“恭喜爹可以称帝了！”</li>
+    <!--2.徐州城本来就是我的，我的！-->
+    <li>ntkcube_scene->[cubeWork][cubeDepicts]了一名[ntkmeme_race]，其表情[ntkmeme_emotional_expression_strong],怒吼道：“魔方本来就是我的，我的！”</li>
+    <!--3.这曹操有异嗜-->
+    <li>ntkcube_scene->[cubeWork][cubeDepicts]了几个[PersonJob]在[ntkmeme_dialogue],[side_position]刻着：“这[ntkmeme_specialCharacter]有异嗜，她历来视少女为残花败柳，而把魔方看作是妙妇。”</li>
+    <!--4.天子才是宝中之宝-->
+    <li>ntkcube_scene->[cubeWork][cubeDepicts]在车上的一名[ntkmeme_race],手中握着[aCube]，向旁人[ntkmeme_dialogue]：“[ntkmeme_faction]已是一片废墟，无用之物，魔方才是宝中之宝！”</li>
+    <!--5.我看你是舍不得这张帅案吧-->
+    <li>ntkcube_scene->[cubeWork][cubeDepicts]两个[ntkmeme_race],一人怒喊道：“我看你是舍不得这魔方吧！”而后充满[AdjectiveBadass]地将魔方掀飞。[side_position]的下属正急匆匆地拾起魔方，却遭另一人阻拦：“你拾它作甚？你今天捡起来，他明天还要来撒野的！”</li>
+
+  </NewThreeKingdomsArt_CubeArtRules.rulePack.rulesStrings>
+
+</LanguageData>

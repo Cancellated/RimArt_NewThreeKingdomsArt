@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 新三共享词池（普通艺术和异象艺术） - 中文 -->
+<LanguageData>
+
+  <NewThreeKingdomsArt_SharedRules.rulePack.rulesStrings>
+
+    <!-- 种族池 -->
+    <li>ntkmeme_race->智人</li>
+    <li>ntkmeme_race->猪猡种</li>
+    <li>ntkmeme_race->尼人种</li>
+    <li>ntkmeme_race->炎魔种</li>
+    <li>ntkmeme_race->污骸种</li>
+    <li>ntkmeme_race->骠骑种</li>
+    <li>ntkmeme_race->智灵种</li>
+    <li>ntkmeme_race->优侣种</li>
+    <li>ntkmeme_race->毛绒种</li>
+    <li>ntkmeme_race->星旅种</li>
+    <li>ntkmeme_race->土鼹种</li>
+    <li>ntkmeme_race->赫血种</li>
+    <li>ntkmeme_race->鼠族</li>
+    <li>ntkmeme_race->绮罗族</li>
+    <li>ntkmeme_race->米莉拉</li>
+    <li>ntkmeme_race->龙裔</li>
+    <li>ntkmeme_race->萌螈</li>
+    <li>ntkmeme_race->沃芬</li>
+
+    <!-- 尸体形态 -->
+    <li>ntkmeme_body_shape->看不见躯干的</li>
+    <li>ntkmeme_body_shape->内脏变成外脏的</li>
+    <li>ntkmeme_body_shape->身首分离的</li>
+    <li>ntkmeme_body_shape->大脑被毁的</li>
+
+    <!-- 地点池 -->
+    <li>ntkmeme_location->天空之城卡利多</li>
+    <li>ntkmeme_location->一个鼠族城镇</li>
+    <li>ntkmeme_location->隐居的绮罗村庄</li>
+    <li>ntkmeme_location->金鸢尾兰花海</li>
+    <li>ntkmeme_location->一座巨大的高塔</li>
+    <li>ntkmeme_location->一片繁茂的竹林</li>
+    <li>ntkmeme_location->富丽堂皇的宫殿</li>
+    <li>ntkmeme_location->一个未知的地点</li>
+
+    <!-- 地点相对位置池 -->
+    <li>ntkmeme_place->郊外</li>
+    <li>ntkmeme_place->中心</li>
+    <li>ntkmeme_place->深处</li>
+    <li>ntkmeme_place->附近</li>
+    <li>ntkmeme_place->边缘</li>
+    <li>ntkmeme_place->不知何处</li>
+
+    <!-- 特殊人物池 -->
+    <li>ntkmeme_specialCharacter->沙皇</li>
+    <li>ntkmeme_specialCharacter->骑士长</li>
+    <li>ntkmeme_specialCharacter->莉迪亚</li>
+    <li>ntkmeme_specialCharacter->猫咪勇者</li>
+    <li>ntkmeme_specialCharacter->飞僵</li>
+
+    <!-- 情感表达池（强烈） -->
+    <li>ntkmeme_emotional_expression_strong->愤怒</li>
+    <li>ntkmeme_emotional_expression_strong->震惊</li>
+    <li>ntkmeme_emotional_expression_strong->不可置信</li>
+    <li>ntkmeme_emotional_expression_strong->瞠目结舌</li>
+    <li>ntkmeme_emotional_expression_strong->怒发冲冠</li>
+
+    <!-- 情感表达池（平静） -->
+    <li>ntkmeme_emotional_expression_peace->平静</li>
+    <li>ntkmeme_emotional_expression_peace->释然</li>
+    <li>ntkmeme_emotional_expression_peace->释怀</li>
+    <li>ntkmeme_emotional_expression_peace->恍然大悟</li>
+    <li>ntkmeme_emotional_expression_peace->微笑</li>
+    <li>ntkmeme_emotional_expression_peace->和善</li>
+
+    <!-- 对话动作 -->
+    <li>ntkmeme_dialogue->窃窃私语</li>
+    <li>ntkmeme_dialogue->交头接耳</li>
+    <li>ntkmeme_dialogue->说悄悄话</li>
+    <li>ntkmeme_dialogue->闲聊</li>
+    <li>ntkmeme_dialogue->嚷嚷</li>
+
+    <!-- 职位 -->
+    <li>ntkmeme_officialPosition->星海帝皇</li>
+    <li>ntkmeme_officialPosition->内宫族</li>
+    <li>ntkmeme_officialPosition->教宗</li>
+    <li>ntkmeme_officialPosition->大司马</li>
+    <li>ntkmeme_officialPosition->仲裁官</li>
+
+    <!--作品前缀-->
+    <li>ntkmeme_artwork->该作品</li>
+    <li>ntkmeme_artwork->此作品</li>
+    <li>ntkmeme_artwork->这件作品</li>
+    <li>ntkmeme_artwork->作品</li>
+    <li>ntkmeme_artwork->本作</li>
+    <li>ntkmeme_artwork->场景</li>
+    <li>ntkmeme_artwork->画面</li>
+    <li>ntkmeme_artwork->整个画面</li>
+    <li>ntkmeme_artwork->这个场景</li>
+
+    <!--派系名池（运行时由 MemeWeightApplier 动态注入）-->
+    <li>ntkmeme_faction->未知派系</li>
+
+  </NewThreeKingdomsArt_SharedRules.rulePack.rulesStrings>
+
+</LanguageData>

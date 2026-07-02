@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--New Three Kingdoms Shared Rule Pools-->
+<Defs>
+  <RulePackDef>
+    <defName>NewThreeKingdomsArt_SharedRules</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <!-- ===== Shared Sub-rule Pools ===== -->
+        <!-- Race pool -->
+        <li>ntkmeme_race->baseliner</li>
+        <li>ntkmeme_race->pigskin</li>
+        <li>ntkmeme_race->neanderthal</li>
+        <li>ntkmeme_race->impid</li>
+        <li>ntkmeme_race->waster</li>
+        <li>ntkmeme_race->hussar</li>
+        <li>ntkmeme_race->genie</li>
+        <li>ntkmeme_race->highmate</li>
+        <li>ntkmeme_race->starjack</li>
+        <li>ntkmeme_race->yttakin</li>
+        <li>ntkmeme_race->dirtmole</li>
+        <li>ntkmeme_race->sanguophage</li>
+        <li>ntkmeme_race->ratkin</li>
+        <li>ntkmeme_race->kiiro</li>
+        <li>ntkmeme_race->milira</li>
+        <li>ntkmeme_race->dragonian</li>
+        <li>ntkmeme_race->moelotl</li>
+        <li>ntkmeme_race->wolfein</li>
+
+        <!-- Body shape pool -->
+        <li>ntkmeme_body_shape->a [ntkmeme_race] with no torso visible</li>
+        <li>ntkmeme_body_shape->a [ntkmeme_race] whose insides became outsides</li>
+        <li>ntkmeme_body_shape->a [ntkmeme_race] with head separated from body</li>
+        <li>ntkmeme_body_shape->a [ntkmeme_race] whose brain was destroyed</li>
+
+        <!-- Location pool -->
+        <li>ntkmeme_location->the sky city Kalido</li>
+        <li>ntkmeme_location->a ratkin town</li>
+        <li>ntkmeme_location->a hidden Kiiro village</li>
+        <li>ntkmeme_location->a golden iris flower field</li>
+        <li>ntkmeme_location->a colossal tower</li>
+        <li>ntkmeme_location->a lush bamboo grove</li>
+        <li>ntkmeme_location->a magnificent palace</li>
+        <li>ntkmeme_location->an unknown location</li>
+
+        <!-- Place relative position pool -->
+        <li>ntkmeme_place->the outskirts of</li>
+        <li>ntkmeme_place->the center of</li>
+        <li>ntkmeme_place->the depths of</li>
+        <li>ntkmeme_place->near</li>
+        <li>ntkmeme_place->the edge of</li>
+        <li>ntkmeme_place->somewhere in</li>
+
+        <!-- Special character pool -->
+        <li>ntkmeme_specialCharacter->the Tsar</li>
+        <li>ntkmeme_specialCharacter->the Knight Commander</li>
+        <li>ntkmeme_specialCharacter->Lydia</li>
+        <li>ntkmeme_specialCharacter->the Cat Hero</li>
+        <li>ntkmeme_specialCharacter->the Flying Ghoul</li>
+
+        <!-- Emotional expression pool (strong) -->
+        <li>ntkmeme_emotional_expression_strong->anger</li>
+        <li>ntkmeme_emotional_expression_strong->shock</li>
+        <li>ntkmeme_emotional_expression_strong->disbelief</li>
+        <li>ntkmeme_emotional_expression_strong->dumbfounded</li>
+        <li>ntkmeme_emotional_expression_strong->furious rage</li>
+
+        <!-- Emotional expression pool (peaceful) -->
+        <li>ntkmeme_emotional_expression_peace->calm</li>
+        <li>ntkmeme_emotional_expression_peace->relieved</li>
+        <li>ntkmeme_emotional_expression_peace->at peace</li>
+        <li>ntkmeme_emotional_expression_peace->sudden enlightenment</li>
+        <li>ntkmeme_emotional_expression_peace->smiling</li>
+        <li>ntkmeme_emotional_expression_peace->kind</li>
+
+        <!-- Dialogue action pool -->
+        <li>ntkmeme_dialogue->whispering</li>
+        <li>ntkmeme_dialogue->murmuring</li>
+        <li>ntkmeme_dialogue->talking in hushed voices</li>
+        <li>ntkmeme_dialogue->chatting</li>
+        <li>ntkmeme_dialogue->shouting</li>
+
+        <!-- Official position pool -->
+        <li>ntkmeme_officialPosition->Emperor</li>
+        <li>ntkmeme_officialPosition->Inner Court Clan</li>
+        <li>ntkmeme_officialPosition->Pope</li>
+        <li>ntkmeme_officialPosition->Grand Marshal</li>
+        <li>ntkmeme_officialPosition->Arbiter</li>
+
+        <!-- Artwork prefix pool -->
+        <li>ntkmeme_artwork->The image</li>
+        <li>ntkmeme_artwork->This work</li>
+        <li>ntkmeme_artwork->The work</li>
+        <li>ntkmeme_artwork->The scene</li>
+        <li>ntkmeme_artwork->The sculpture</li>
+        <li>ntkmeme_artwork->The piece</li>
+        <li>ntkmeme_artwork->In the image</li>
+        <li>ntkmeme_artwork->In the scene</li>
+        <li>ntkmeme_artwork->The entire image</li>
+
+        <!-- Faction name pool (populated at runtime by MemeWeightApplier) -->
+        <li>ntkmeme_faction->an unknown faction</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--New Three Kingdoms Cube Art Rule Pack-->
+<Defs>
+  <RulePackDef>
+    <defName>NewThreeKingdomsArt_CubeArtRules</defName>
+    <rulePack>
+      <rulesStrings>
+        <!-- Entry (p value adjustable via MemeWeightApplier) -->
+        <li>r_art_description(p=1)->[ntkcube_scene]</li>
+
+        <!-- ===== Cube Meme Scenes ===== -->
+        <!--
+          Available vanilla cube placeholders:
+            [cubeWork]     - work/sculpture/artwork/piece
+            [cubeDepicts]  - depicts/shows/displays/portrays
+            [aCube]        - an abstract cube/a perfect cube/etc.
+            [cubeLocation] - near the center/on each cube face/etc.
+            [aPawn]        - a self-portrait of the artist/etc.
+            [pawnsPlural]  - your colonists/a group of raiders/etc.
+            [worshippingTheCube] - worshipping the cube/bowing to cube/etc.
+            [worshipsTheCube]    - worships the cube/bows to the cube/etc.
+            [cubeEmotion]  - unfazed/pleased/upset/etc.
+
+          Available shared sub-rules (from NewThreeKingdomsArt_SharedRules):
+            [ntkmeme_race]
+            [ntkmeme_body_shape]
+            [ntkmeme_location]
+            [ntkmeme_place]
+            [ntkmeme_specialCharacter]
+            [ntkmeme_emotional_expression_strong]
+            [ntkmeme_emotional_expression_peace]
+            [ntkmeme_dialogue]
+            [ntkmeme_officialPosition]
+        -->
+
+        <!-- Congratulations, father, you can now proclaim yourself emperor -->
+        <li>ntkcube_scene->The [cubeWork] [cubeDepicts] [aCube]. A [ntkmeme_race] [PersonJob] is holding up the cube to [aPawn], saying: "Congratulations, father, you can now proclaim yourself emperor!"</li>
+        <!-- The cube was mine to begin with -->
+        <li>ntkcube_scene->The [cubeWork] [cubeDepicts] a [ntkmeme_race], their face showing [ntkmeme_emotional_expression_strong], roaring: "The cube was mine to begin with — MINE!"</li>
+        <!-- This one has strange tastes -->
+        <li>ntkcube_scene->The [cubeWork] [cubeDepicts] several [PersonJob]s [ntkmeme_dialogue]. [side_position] is inscribed: "This [ntkmeme_specialCharacter] has strange tastes — she has always seen young girls as wilted flowers, yet views the cube as a beautiful woman."</li>
+        <!-- The cube is the true treasure -->
+        <li>ntkcube_scene->The [cubeWork] [cubeDepicts] a [ntkmeme_race] in a vehicle, holding [aCube] in their hand, [ntkmeme_dialogue] to those nearby: "[ntkmeme_faction] is a wasteland now, a useless thing — the cube is the true treasure among treasures!"</li>
+        <!-- You can't bear to part with this cube -->
+        <li>ntkcube_scene->The [cubeWork] [cubeDepicts] two [ntkmeme_race]. One shouts angrily: "I see you can't bear to part with this cube!" Then, with [AdjectiveBadass] fury, they flip the cube away. [side_position], a subordinate rushes to pick up the cube, but is stopped by the other: "What are you picking it up for? If you pick it up today, he'll come back and cause trouble again tomorrow!"</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

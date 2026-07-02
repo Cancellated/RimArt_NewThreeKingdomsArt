@@ -59,9 +59,9 @@ namespace NewThreeKingdomsArt
             }
             else
             {
-                // 原版每条分支各有 1 条 p=1 的入口规则
-                // 本 Mod 通过 include 向两个分支各注入 1 条 p=X 的规则
-                // 每个分支的实际概率 = X / (1 + X)
+                // Harmony Prefix 在 Taleless 分支中注入 1 条 p=X 的入口规则
+                // 与 Root 的 p=1 规则竞争，实际概率 = X / (1 + X)
+                // 例：p=1→50% | p=4→80% | p=99→99%
                 float rate = p / (1f + p);
                 listing.Label("触发概率: " + rate.ToString("P1") + "  (p=" + p.ToString("F2") + " / 1+" + p.ToString("F2") + ")");
             }
@@ -100,8 +100,8 @@ namespace NewThreeKingdomsArt
             }
 
             listing.Gap(8f);
-            listing.Label("公式: 概率 = p / (1+p)");
-            listing.Label("p=0.25→20% | p=1→50% | p=4→80% | p=99→99%");
+            listing.Label("公式: 概率 = p / (原版权重合计 + p)");
+            listing.Label("p=0.25→20%/14% | p=1→50%/33% | p=4→80%/67% | p=99→99%/98%");
             listing.Label("从新创作的艺术品开始生效，已有艺术不变。");
 
             listing.End();

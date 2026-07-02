@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
-  将新三词库 include 到原版艺术品描述 RulePackDef 中。
-  include 机制是追加合并，不覆写原版规则。
-  多个 Mod 可各自添加 include，互不冲突。
+  新三艺术 include 注入已由 C# Harmony Patch 接管
+  （Harmony_ArtDescriptionInclude.cs → TaleTextGenerator.GenerateTextFromTale Prefix）
+  
+  此文件保留作为占位，确保 Patches 目录存在。
+  所有 RulePackDef include 逻辑已移至运行时动态注入，不再依赖 XML Patch。
 -->
 <Patch>
-
-  <!-- 有故事分支：采用原版词库 -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/RulePackDef[defName="ArtDescriptionRoot_HasTale"]</xpath>
-    <value>
-      <include>
-        <li>NewThreeKingdomsArt_MemeArtRules</li>
-      </include>
-    </value>
-  </Operation>
-
-  <!-- 无故事分支：注入新三词库 -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/RulePackDef[defName="ArtDescriptionRoot_Taleless"]</xpath>
-    <value>
-      <include>
-        <li>NewThreeKingdomsArt_MemeArtRules</li>
-      </include>
-    </value>
-  </Operation>
-
 </Patch>
